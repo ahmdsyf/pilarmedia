@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
 
         $products = Product::factory(100)->create();
 
-        for($i = 0; $i < 100; $i++) {
+        for($i = 0; $i < 200; $i++) {
             $records = array_map(
                 function () use ($salePersons, $products) {
                     return [
